@@ -1,0 +1,22 @@
+name: GiveawayGUI
+version: '1.0.0'
+main: com.yourserver.giveaway.GiveawayPlugin
+api-version: '26.3'
+folia-supported: true
+author: YourServer
+description: Simple item giveaway system with a GUI entry menu.
+
+commands:
+  giveawaygui:
+    description: Manage giveaways (admin only)
+    usage: "/giveawaygui [add [time]|cancel|info]"
+    permission: giveaway.admin
+    permission-message: '&cYou do not have permission to manage giveaways.'
+  giveaway:
+    description: View and join the current giveaway
+    usage: /giveaway
+
+permissions:
+  giveaway.admin:
+    description: Allows managing giveaways with /giveawaygui
+    default: op
